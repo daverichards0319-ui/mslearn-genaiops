@@ -29,7 +29,7 @@ from openai.types.evals.create_eval_jsonl_run_data_source_param import (
 
 load_dotenv()  # reads variables from the .env file in your project root
 
-endpoint              = os.environ.get("AZURE_AI_PROJECT_ENDPOINT")
+endpoint              = os.environ.get("AZURE_AI_PROJECT_ENDPOINT", "").strip()
 model_deployment_name = os.environ.get("MODEL_NAME", "gpt-4.1")
 dataset_name          = "trail-guide-evaluation-dataset"
 dataset_version       = "1"

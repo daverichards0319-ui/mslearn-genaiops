@@ -48,7 +48,7 @@ def run_batch_tests(experiment_name):
     
     # Create project client
     client = AIProjectClient(
-        endpoint=os.environ["AZURE_AI_PROJECT_ENDPOINT"],
+        endpoint=os.environ["AZURE_AI_PROJECT_ENDPOINT"].strip(),
         credential=DefaultAzureCredential(),
     )
 

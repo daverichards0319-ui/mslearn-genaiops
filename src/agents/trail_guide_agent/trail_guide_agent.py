@@ -14,7 +14,7 @@ with open(prompt_file, 'r') as f:
     instructions = f.read().strip()
 
 project_client = AIProjectClient(
-    endpoint=os.environ["AZURE_AI_PROJECT_ENDPOINT"],
+    endpoint=os.environ["AZURE_AI_PROJECT_ENDPOINT"].strip(),
     credential=DefaultAzureCredential(),
 )
 

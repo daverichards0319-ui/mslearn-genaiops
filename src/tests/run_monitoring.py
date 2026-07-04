@@ -24,7 +24,7 @@ from opentelemetry.instrumentation.openai_v2 import OpenAIInstrumentor
 # Load environment variables from .env file
 load_dotenv()
 
-project_endpoint = os.environ["AZURE_AI_PROJECT_ENDPOINT"]
+project_endpoint = os.environ["AZURE_AI_PROJECT_ENDPOINT"].strip()
 openai_endpoint = os.environ["AZURE_OPENAI_ENDPOINT"]
 model_name = os.getenv("MODEL_NAME", "gpt-4.1")
 
