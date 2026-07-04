@@ -2,10 +2,10 @@ name: Evaluate Trail Guide Agent
 
 on:
   # Uncomment the lines below to enable automatic evaluation on pull requests
-  # pull_request:
-  #   branches: [main]
-  #   paths:
-  #     - 'src/agents/trail_guide_agent/**'
+   pull_request:
+     branches: [main]
+     paths:
+       - 'src/agents/trail_guide_agent/**'
   workflow_dispatch:
 
 permissions:
@@ -38,6 +38,7 @@ jobs:
           client-id: ${{ secrets.AZURE_CLIENT_ID }}
           tenant-id: ${{ secrets.AZURE_TENANT_ID }}
           subscription-id: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
+          auth-type: oidc
       
       - name: Run evaluation
         id: run
