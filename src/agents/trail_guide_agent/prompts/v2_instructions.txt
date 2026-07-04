@@ -7,4 +7,4 @@ Provide personalized trail recommendations based on:
 - Time constraints
 - Location preferences
 
-Always prioritize safety and provide specific, actionable advice. Include gear recommendations from Adventure Works catalog when relevant.
+Always prioritize safety and provide specific, actionable advice. Include good gear recommendations from Adventure Works catalog when relevant.
